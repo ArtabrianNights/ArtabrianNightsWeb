@@ -22,7 +22,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 
 // Import Flex Layout module
-//import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatCardModule,
     MatTabsModule,
-    //FlexLayoutModule,
+    FlexLayoutModule,
     MatIconModule,
   ],
   providers: [],
