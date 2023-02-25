@@ -1,18 +1,22 @@
-<mat-toolbar role="toolbar" class="mat-elevation-z8" color="primary">
+
+<!--<mat-toolbar fxLayout="row" class="mat-elevation-z8" color="primary">
     <img width="60" alt="Logo" src="/assets/images/ICON_white.png"/>
     
-    <span class="title">Artabrian Nights</span>
+    <span fxFlex class="title">Artabrian Nights</span>
 
     <div class="spacer"></div>
 
-    <button mat-button color="basic" class="bar-button" routerLink="/" >Portada</button>
+    <button mat-button color="basic" class="bar-button" routerLink="/" fxHide.xs>Portada</button>
 
-    <button mat-button color="basic" class="bar-button" routerLink="about">Quienes somos</button>
+    <button mat-button color="basic" class="bar-button" routerLink="about" fxHide.xs>Quienes somos</button>
                 
-    <button mat-button color="basic" class="bar-button" routerLink="event-calendar">Calendario de eventos</button>
+    <button mat-button color="basic" class="bar-button" routerLink="event-calendar" fxHide.xs>Calendario de eventos</button>
 
-    <button mat-button color="basic" class="bar-button" routerLink="archive">Hemeroteca</button>
+    <button mat-button color="basic" class="bar-button" routerLink="archive" fxHide.xs>Hemeroteca</button>
+
+  </mat-toolbar>
       
+-->
       <!--
       <a aria-label="Artabrian Nights on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
         <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -28,5 +32,38 @@
       </a>
       -->
   
+      <mat-toolbar fxLayout="row" class="mat-elevation-z8" color="primary">
+        <img mat-img height="50vh" src="/assets/images/ICON_white.png">
+        <span fxFlex class="title" routerLink="/">Artabrian Nights</span>
+        <button mat-button *ngFor="let item of menuItems"
+        [fxShow]="item.showOnDesktop" 
+        [fxShow.xs]="item.showOnMobile"
+        [fxShow.sm]="item.showOnTablet"
+        routerLink={{item.routerLink}}>
+            <!--mat-icon class="mr">{{item.icon}}</mat-icon-->
+            {{item.label}} 
+        </button>
+
+        <ng-container>
+          <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxShow fxHide.gt-sm>
+              <mat-icon>menu</mat-icon>
+          </button>
+          <mat-menu #dropMenu="matMenu">
+              <ng-container *ngFor="let item of menuItems; last as isLast">                
+                  <div [fxShow]="!item.showOnDesktop" 
+                       [fxShow.sm]="!item.showOnTablet" 
+                       [fxShow.xs]="!item.showOnMobile">
+                      <button mat-menu-item  routerLink={{item.routerLink}}>
+                          <mat-icon class="mr">{{item.icon}}</mat-icon>
+                          {{item.label}}
+                      </button>
+                      <ng-container *ngIf="isLast == false"><mat-divider></mat-divider></ng-container>
+                  </div>
+              </ng-container>
+          </mat-menu>
+      </ng-container>
+    </mat-toolbar>
+
+
          
-</mat-toolbar>
+

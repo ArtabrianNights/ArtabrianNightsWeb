@@ -20,9 +20,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 
 // Import Flex Layout module
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HemerotecaComponent,
     Torneo1Component,
     HomeComponent,
+    CalendarComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatNativeDateModule,
@@ -46,6 +50,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatTabsModule,
     FlexLayoutModule,
     MatIconModule,
+    MatMenuModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
