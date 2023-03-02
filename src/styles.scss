@@ -9,12 +9,9 @@
 /* Get theme variables */
 $app-primary: mat-palette($mat-indigo);
 $app-accent: mat-palette($mat-pink, A200, A100, A400);
-$theme: mat-light-theme((
-  color: (
-    primary: $app-primary,
-    accent: $app-accent,
-  )
-));
+$theme: mat-light-theme((color: (primary: $app-primary,
+        accent: $app-accent,
+      )));
 $color: mat-get-color-config($theme);
 $primary: map-get($color, primary);
 $accent: map-get($color, accent);
@@ -23,22 +20,23 @@ $warn: map-get($color, warn);
 /* Fonts */
 @font-face {
   font-family: "Aladdin Regular";
-  src: url("/assets/fonts/aladdin.ttf");
-  }
+  src: url("assets/fonts/aladdin.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: mat-color($primary, 100);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 
-html, body { height: 100%; }
-body { 
-    margin: 0%; font-family: Roboto, "Helvetica Neue", sans-serif;
-    //background-image: url('/assets/images/mana-vault-2x2-background-2560x1600.jpg');
-    background-color: mat-color($primary, 100);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
- }
-
-
-.bar-button:hover{
-    background-color: mat-color($primary,300);
- }
-
+.bar-button:hover {
+  background-color: mat-color($primary, 300);
+}

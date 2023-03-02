@@ -1,22 +1,19 @@
 <div class="calendar-section">
-    <div class="text">
-  
-      <h1>Calendario de eventos para 2023</h1>
+  <div class="text">
 
-      <p>Las fechas mostradas a continuación son orientativas y podrán ser modificadas.</p>
-      <br>
-      <br>
+    <h1>Calendario de eventos para 2023</h1>
 
-      <h3>Modern</h3>
-  
-      <ol>
-        <br>
-        <li>18 de febrero</li>
-        <li>1 de abril</li>
-        <li>3 de junio</li>
-        <li>19 de agosto</li>
-        <li>7 de octubre</li>
-        <li>11 de noviembre</li>
-      </ol>
-  
+    <p>Las fechas mostradas a continuación son orientativas y podrán ser modificadas.</p>
+    <br>
+    <br>
+
+    <!-- Responsive iFrame Container desktop -->
+    <div fxHide fxShow.gt-sm class="responsive-iframe-container">
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="700" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
+
+    <!-- Responsive iFrame Container smaller screens -->
+    <div fxShow fxHide.gt-sm class="responsive-iframe-container-small">
+      <iframe src="https://calendar.google.com/calendar/embed?height=620&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=0&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="350" height="620" frameborder="0" scrolling="yes"></iframe>
+    </div>
+  </div>

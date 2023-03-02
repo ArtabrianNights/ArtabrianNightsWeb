@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainToolbarComponent } from './main-toolbar/main-toolbar.component';
+import { AppFooterComponent } from './app-footer/app-footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HemerotecaComponent } from './hemeroteca/hemeroteca.component';
@@ -19,7 +20,7 @@ import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 
@@ -31,6 +32,7 @@ import { CalendarComponent } from './calendar/calendar.component';
   declarations: [
     AppComponent,
     MainToolbarComponent,
+    AppFooterComponent,
     AboutComponent,
     HemerotecaComponent,
     Torneo1Component,
@@ -51,7 +53,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     FlexLayoutModule,
     MatIconModule,
     MatMenuModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

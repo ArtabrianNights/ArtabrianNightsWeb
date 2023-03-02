@@ -1,23 +1,32 @@
 <h2 style="text-align:center">Primer Torneo Modern - 18 de febrero de 2023</h2>
 
-<!-- Swiper -->
-<swiper-container class="swiper-container" navigation="true" pagination="true" pagination-type="fraction" effect="cards" scrollbar="true" mousewheel="true" keyboard="true">
+<!-- Swiper desktop -->
+<swiper-container fxHide fxShow.gt-sm class="swiper-container-desktop" navigation="true" pagination="true" pagination-type="fraction" effect="cards" scrollbar="true" mousewheel="true" keyboard="true">
 
   <swiper-slide>
     <mat-card class="column-card">
       <mat-card-header>
         <mat-card-title></mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="/assets/hemeroteca/2023/1/Cartel.jpeg" alt="Cartel">
+      <img mat-card-image src="assets/hemeroteca/2023/1/Cartel.jpeg" alt="Cartel">
     </mat-card>
   </swiper-slide>
 
   <swiper-slide>
     <mat-card class="column-card">
       <mat-card-header>
-        <mat-card-title>Resultados</mat-card-title>
+        <mat-card-title>Resultados suizo</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="/assets/hemeroteca/2023/1/ResultadosSuizo.jpeg" alt="ResultadosSuizo">
+      <img mat-card-image src="assets/hemeroteca/2023/1/ResultadosSuizo.jpeg" alt="ResultadosSuizo">
+    </mat-card>
+  </swiper-slide>
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>Metagame</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/Metagame.jpeg" alt="Metagame">
     </mat-card>
   </swiper-slide>
 
@@ -26,7 +35,7 @@
       <mat-card-header>
         <mat-card-title>1º-2º</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="/assets/hemeroteca/2023/1/1-2.jpeg" alt="1-2">
+      <img mat-card-image src="assets/hemeroteca/2023/1/1-2.jpeg" alt="1-2">
       <mat-card-content>
         <p>Diego Aguiar y Samuel Vilas</p>
       </mat-card-content>
@@ -38,7 +47,7 @@
       <mat-card-header>
         <mat-card-title>3º-4º</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="/assets/hemeroteca/2023/1/3-4.jpeg" alt="1-2">
+      <img mat-card-image src="assets/hemeroteca/2023/1/3-4.jpeg" alt="1-2">
       <mat-card-content>
         <p>Rodrigo Lamela y Martín Souto</p>
       </mat-card-content>
@@ -50,7 +59,7 @@
       <mat-card-header>
         <mat-card-title>5º-8º</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="/assets/hemeroteca/2023/1/5-8.jpeg" alt="1-2">
+      <img mat-card-image src="assets/hemeroteca/2023/1/5-8.jpeg" alt="1-2">
       <mat-card-content>
         <p>Miguel Vidal, Fernando Lorenzo, David Servia y Rubén Rodríguez</p>
       </mat-card-content>
@@ -59,4 +68,72 @@
 
 </swiper-container>
 
+
+<!-- Swiper desktop: smaller screens -->
+<swiper-container fxShow fxHide.gt-sm class="swiper-container" navigation="true" pagination="true" pagination-type="fraction" effect="cards" scrollbar="true" mousewheel="true" keyboard="true">
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title></mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/Cartel.jpeg" alt="Cartel">
+    </mat-card>
+  </swiper-slide>
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>Resultados suizo</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/ResultadosSuizo.jpeg" alt="ResultadosSuizo">
+    </mat-card>
+  </swiper-slide>
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>Metagame</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/Metagame.jpeg" alt="Metagame">
+    </mat-card>
+  </swiper-slide>
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>1º-2º</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/1-2.jpeg" alt="1-2">
+      <mat-card-content>
+        <p>Diego Aguiar y Samuel Vilas</p>
+      </mat-card-content>
+    </mat-card>
+
+  </swiper-slide>
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>3º-4º</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/3-4.jpeg" alt="1-2">
+      <mat-card-content>
+        <p>Rodrigo Lamela y Martín Souto</p>
+      </mat-card-content>
+    </mat-card>
+  </swiper-slide>
+
+  <swiper-slide>
+    <mat-card class="column-card">
+      <mat-card-header>
+        <mat-card-title>5º-8º</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="assets/hemeroteca/2023/1/5-8.jpeg" alt="1-2">
+      <mat-card-content>
+        <p>Miguel Vidal, Fernando Lorenzo, David Servia y Rubén Rodríguez</p>
+      </mat-card-content>
+    </mat-card>
+  </swiper-slide>
+
+</swiper-container>
 

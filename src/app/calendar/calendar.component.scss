@@ -1,40 +1,79 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: monospace;
-  }
-  
-  .calendar-section{
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  //font-family: monospace;
+}
+
+.calendar-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 80%;
+  max-width: 100%;
+  padding: 0 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text h1 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+@media screen and (max-width: 1180px) {
+  .calendar-section {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    padding: 70px 0px;
   }
-  
-  .text{
-    width: 60%;
-    max-width: 100%;
-    padding: 0 10px;
-    text-align: justify;
-    text-justify: inter-word;
+}
+
+@media screen and (max-width: 650px) {
+  .about-section .content img {
+    margin-bottom: 35px;
   }
-  
-  .text h1{
-    text-align: center;
-    padding: 10px 10px;
-  }
-  
-  @media screen and (max-width: 1180px) {
-    .calendar-section{
-      width: 100%;
-      height: auto;
-      padding: 70px 0px;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .about-section .content img{
-      margin-bottom: 35px;
-    }
-  }
+}
+
+/* Responsive iFrame desktop */
+
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive iFrame smaller screens */
+.responsive-iframe-container-small {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe-container-small iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

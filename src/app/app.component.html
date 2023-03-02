@@ -1,12 +1,17 @@
-<!-- Header Navbar -->
-<app-main-toolbar></app-main-toolbar>
-<router-outlet></router-outlet>
+<div class="wrapper">
+  <!-- Header Navbar -->
+  <app-main-toolbar></app-main-toolbar>
 
-<!--
-  <div class="background-image" style="text-align: center;">
-    <img centering alt="Header image" src="assets/images/header.jpeg"/>
-  </div>
--->
+  <!-- Content -->
+  <router-outlet></router-outlet>
+
+
+  <!-- Sticky Footer: push pushes down the footer -->
+  <div class="push"></div>
+  <app-app-footer></app-app-footer>
+</div>
+
+
 
 
 <!--
@@ -157,9 +162,3 @@
 
 </div>
 -->
-
-
-
-
-
-

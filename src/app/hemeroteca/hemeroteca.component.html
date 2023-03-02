@@ -1,6 +1,10 @@
 
   <mat-tab-group class="hemeroteca-section">
-    <mat-tab label="Torneo #1"> <app-torneo1></app-torneo1> </mat-tab>
+    <mat-tab label="Torneo #1"> 
+      <ng-template matTabContent>
+        <app-torneo1></app-torneo1>
+      </ng-template>
+    </mat-tab>
     <mat-tab label="Torneo #2"> Próximamente </mat-tab>
     <mat-tab label="Torneo #3"> Próximamente </mat-tab>
     <mat-tab label="Torneo #4"> Próximamente </mat-tab>
