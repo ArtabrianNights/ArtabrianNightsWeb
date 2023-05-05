@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HemerotecaComponent } from './hemeroteca/hemeroteca.component';
 import { Torneo1Component } from './hemeroteca/2023/torneo1/torneo1.component';
+import { Torneo2Component } from './hemeroteca/2023/torneo2/torneo2.component';
 
 // Import Angular Material modules
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -28,6 +29,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CalendarComponent } from './calendar/calendar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     Torneo1Component,
     HomeComponent,
     CalendarComponent,
+    Torneo2Component,
   ],
   imports: [
     AppRoutingModule,

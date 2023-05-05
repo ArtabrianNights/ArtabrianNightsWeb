@@ -33,8 +33,9 @@
       -->
   
       <mat-toolbar fxLayout="row" class="mat-elevation-z8" color="primary">
-        <img mat-img height="50vh" src="assets/images/ICON_white.png">
+        <img mat-img class="icon" height="50vh" src="assets/images/ICON_white.png">
         <span fxFlex class="title" routerLink="/">Artabrian Nights</span>
+        <span class="spacer"></span>
         <button mat-button *ngFor="let item of menuItems"
         [fxShow]="item.showOnDesktop" 
         [fxShow.xs]="item.showOnMobile"
