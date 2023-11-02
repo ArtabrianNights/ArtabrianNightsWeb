@@ -1,16 +1,16 @@
 <!-- Tailwind CSS NavBar -->
 <nav class="justify-between items-center w-[92%] mx-auto bg-indigo-700 shadow-lg dark:bg-white">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-4">
 
       <!-- Site Logo & Title -->
       <a href="https://www.artabriannights.com/" class="flex items-center">
         <img src="assets/images/ICON_white.png" class="h-16 mr-3" alt="Artabrian Nights Logo" />
-        <span class="title self-center md:text-4xl sm:text-3xl text-2xl font-semibold whitespace-nowrap text-white" routerLink="/">Artabrian Nights</span>
+        <span class="title self-center md:text-4xl sm:text-3xl text-2xl font-semibold whitespace-nowrap text-white hover:text-indigo-200" routerLink="/">Artabrian Nights</span>
       </a>
 
       <!-- Menu Items -->
       <div class="hidden w-full md:block md:w-auto">
-        <ul class="font-bold flex flex-row p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="font-bold xl:text-base flex flex-row p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li *ngFor="let item of menuItems" class="{{item.classMenu}}">
             <a class="p-3 hover:text-indigo-200" href={{item.routerLink}}>{{item.label}}</a>
           </li>

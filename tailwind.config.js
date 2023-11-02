@@ -10,9 +10,16 @@ module.exports = {
     serif: ['Merriweather', 'serif'],
   },*/
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
   purge: {
     enabled: true,
     content: ['src/*.html'],
