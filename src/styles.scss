@@ -1,42 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 //@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import '@angular/material/prebuilt-themes/indigo-pink';
+//@import '@angular/material/prebuilt-themes/indigo-pink';
 //@import '@angular/material/prebuilt-themes/pink-bluegrey';
 //@import '@angular/material/prebuilt-themes/purple-green.css';
-@import '@angular/material/theming';
+//@import '@angular/material/theming';
 
-/* Get theme variables */
-$app-primary: mat-palette($mat-indigo);
-$app-accent: mat-palette($mat-pink, A200, A100, A400);
-$theme: mat-light-theme((color: (primary: $app-primary,
-        accent: $app-accent,
-      )));
-$color: mat-get-color-config($theme);
-$primary: map-get($color, primary);
-$accent: map-get($color, accent);
-$warn: map-get($color, warn);
+/* TAILWIND IMPORTS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Fonts */
 @font-face {
   font-family: "Aladdin Regular";
   src: url("assets/fonts/aladdin.ttf");
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0%;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: mat-color($primary, 100);
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-
-.bar-button:hover {
-  background-color: mat-color($primary, 300);
 }

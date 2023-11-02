@@ -13,33 +13,29 @@ export class MainToolbarComponent implements OnInit {
         label: 'Portada',
         icon: 'house',
         routerLink: "/",
-        showOnMobile: false,
-        showOnTablet: true,
-        showOnDesktop: true,
+        classMenu: "md:block sm:hidden",
+        classDropMenu: "sm:block md:hidden"
       },
       {
         label: 'Quienes somos',
         icon: 'group',
         routerLink: "about",
-        showOnMobile: false,
-        showOnTablet: true,
-        showOnDesktop: true,
+        classMenu: "md:block sm:hidden",
+        classDropMenu: "sm:block md:hidden"
       },
       {
         label: 'Calendario de eventos',
         icon: 'calendar_month',
         routerLink: 'calendar',
-        showOnMobile: false,
-        showOnTablet: false,
-        showOnDesktop: true,
+        classMenu: "lg:block md:hidden",
+        classDropMenu: "md:block lg:hidden"
       },
       {
         label: 'Hemeroteca',
         icon: 'slideshow',
         routerLink: 'archive',
-        showOnMobile: false,
-        showOnTablet: false,
-        showOnDesktop: true,
+        classMenu: "lg:block md:hidden",
+        classDropMenu: "md:block lg:hidden"
       },
     ];
   

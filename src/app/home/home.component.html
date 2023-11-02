@@ -1,26 +1,22 @@
-
 <!-- Swiper container for large screens: reduce size -->
-<swiper-container fxHide fxShow.gt-sm class="swiper-container">
+<swiper-container class="flex flex-col mx-auto max-w-2xl px-2 sm:px-6 lg:px-8">
 
-    <swiper-slide>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>Próximo torneo</mat-card-title>
-        </mat-card-header>
-        <img src="assets/images/NextTournament/Cartel.jpg" alt="CartelProximoEvento"> 
-      </mat-card>
-    </swiper-slide>
+  <!-- COLORFUL GRADIENT FRAME - Working as a white frame, div absolute not working... -->
+  <div class="group relative mx-auto">
+    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+      <div class="px-5 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
-</swiper-container>
+        <!-- SWIPER -->
+        <swiper-slide>
+          <mat-card>
+            <mat-card-header class="flex flex-col items-center">
+              <mat-card-title class="dark:text-gray-700 text-center">Próximo torneo</mat-card-title>
+              <mat-card-title class="dark:text-gray-700 text-center">MTG Modern - sábado 21 de octubre</mat-card-title>
+            </mat-card-header>
+            <img src="assets/images/NextTournament/Cartel.png" alt="CartelProximoEvento"> 
+          </mat-card>
+        </swiper-slide>
 
-<!-- Swiper container for small screens: fill -->
-<swiper-container fxShow fxHide.gt-sm>
-    <swiper-slide>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>Próximo torneo</mat-card-title>
-          </mat-card-header>
-          <img src="assets/images/NextTournament/Cartel.jpg" alt="CartelProximoEvento"> 
-        </mat-card>
-      </swiper-slide>
+      </div>
+    </div>
 </swiper-container>
