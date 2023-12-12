@@ -12,7 +12,7 @@ export class MainToolbarComponent implements OnInit {
       {
         label: 'Portada',
         icon: 'house',
-        routerLink: "/",
+        routerLink: "/ArtabrianNightsWeb/",
         classMenu: "md:block sm:hidden",
         classDropMenu: "sm:block md:hidden"
       },
