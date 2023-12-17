@@ -66,15 +66,15 @@ export class AppComponent implements OnInit{
   // Shuffle Function to create random background from MTG Set Symbols
   // Note: we select as many as we need (61), since keeping all the values, even hidden, generates empty space below the footer. This way we no longer need a ngIf clause in the background section
   shuffle = (array: string[]) =>  { 
-    return array.sort(() => Math.random() - 0.5).slice(0,70);
+    return array.sort(() => Math.random() - 0.5).slice(0,80);
   }
   
   constructor() { }
 
   ngOnInit(): void {
     var symbols = this.shuffle(this.mtgSets)
-    this.mtgSetsLeft = symbols.slice(0,35)
-    this.mtgSetsRight = symbols.slice(35,70)
+    this.mtgSetsLeft = symbols.slice(0,40)
+    this.mtgSetsRight = symbols.slice(40,80)
   }
   
 }
