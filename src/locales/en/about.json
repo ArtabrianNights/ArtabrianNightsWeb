@@ -1,0 +1,36 @@
+{
+    "AN":
+    {
+        "msg1":
+        {
+            "1": "is a non-profit organisation created to organise",
+            "2": " tournaments in"
+        },        
+        "msg2":
+        {
+            "1": "This region lies within the ",
+            "2": "Artabrian Gulf",
+            "3": "which gives its name to the organisation, along with one of the earliest sets, Arabian Nights."
+        }
+    },
+    "OBX":
+    {
+        "title": "Goals",
+        "G1": "Promote the different formats of",
+        "G2": "Organise events and tournaments, promoting attendance to foster the current community and build new social relationships among players.",
+        "G3": "Develop an environment that encourages friendly and enjoyable play, even at competitive REL.",
+        "G4": "Provide players with a suitable venue to practice and compete for exciting prizes, while promoting fun and sportsmanship.",
+        "G5": "Reduce the impact of social and economic inequality on the ability to acquire and play a competitive deck, so that performance is determined by intellectual skills rather than economic capability.",
+        "G6": "Promote other games."          
+    },
+    "THX":
+    {
+        "title": "Acknowledgements",
+        "msg": "We would like to thank all the institutions, associations and local game stores that have supported this initiative and continue to do so. Without them, this project would still be just an idea."
+    },
+    "COL":
+    {
+        "title": "Contributors",        
+        "msg": "The activities organised by Artabrian Nights would not be possible without the invaluable support of:"
+    }
+}

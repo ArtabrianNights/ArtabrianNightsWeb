@@ -5,3 +5,9 @@ export interface MenuItem {
     classMenu: string;
     classDropMenu: string;
 }
+
+export interface langMenuItems {
+    label: string;
+    flag: string;
+    lng: string;
+}

@@ -1,32 +1,52 @@
+<!-- TAB GROUP BY YEAR -->
+<mat-tab-group class="xl:w-3/5 lg:w-2/3 mx-auto">
 
-  <mat-tab-group class="hemeroteca-section xl:w-3/5 lg:w-2/3 mx-auto">
-    <mat-tab label="Torneo #1"> 
-      <ng-template matTabContent>
-        <app-torneo1></app-torneo1>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Torneo #2">
-      <ng-template matTabContent>
-        <app-torneo2></app-torneo2>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Torneo #3">
-      <ng-template matTabContent>
-        <app-torneo3></app-torneo3>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Torneo #4">
-      <ng-template matTabContent>
-        <app-torneo4></app-torneo4>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Torneo #5">
-      <ng-template matTabContent>
-        <app-torneo5></app-torneo5>
-      </ng-template>
-    </mat-tab>
-    <mat-tab label="Torneo #6"> Próximamente </mat-tab>
-  </mat-tab-group>
+  <!-- 2023 -->
+  <mat-tab label="2023">
+    <ng-template matTabContent>
+      <mat-tab-group class="mx-auto">
+        <mat-tab label="I Torneo Nadal">
+          <ng-template matTabContent>
+            <app-torneo6></app-torneo6>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Torneo #5">
+          <ng-template matTabContent>
+            <app-torneo5></app-torneo5>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Torneo #4">
+          <ng-template matTabContent>
+            <app-torneo4></app-torneo4>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Torneo #3">
+          <ng-template matTabContent>
+            <app-torneo3></app-torneo3>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Torneo #2">
+          <ng-template matTabContent>
+            <app-torneo2></app-torneo2>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Torneo #1">
+          <ng-template matTabContent>
+            <app-torneo1></app-torneo1>
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
+    </ng-template>
+  </mat-tab>
+
+  <!-- 2024 -->
+  <mat-tab label="2024">
+    <ng-template matTabContent>
+      Próximamente
+    </ng-template>
+  </mat-tab>
+
+</mat-tab-group>
 
   
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import i18next from '../../i18n';
 
 @Component({
   selector: 'app-about',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+/* Random Image from this subset from Arabian Nights */
 captionSet = ['City of Brass',
               'Library of Alexandria',
               'Oasis',
@@ -38,6 +40,28 @@ URLSet = [  'https://www.mtgpics.com/pics/art/ara/016_1.jpg', // City of Brass
   randomArabianNightsImage = '';
   imageCaption = ''
   
+  /* i18n */
+  AN1_1 = i18next.t('about:AN.msg1.1')
+  AN1_2 = i18next.t('about:AN.msg1.2')
+  AN2_1 = i18next.t('about:AN.msg2.1')
+  AN2_2 = i18next.t('about:AN.msg2.2')
+  AN2_3 = i18next.t('about:AN.msg2.3')
+
+  OBX_title = i18next.t('about:OBX.title')
+  OBX_G1 = i18next.t('about:OBX.G1')
+  OBX_G2 = i18next.t('about:OBX.G2')
+  OBX_G3 = i18next.t('about:OBX.G3')
+  OBX_G4 = i18next.t('about:OBX.G4')
+  OBX_G5 = i18next.t('about:OBX.G5')
+  OBX_G6 = i18next.t('about:OBX.G6')
+
+  THX_title = i18next.t('about:THX.title')
+  THX_msg = i18next.t('about:THX.msg')
+
+  COL_title = i18next.t('about:COL.title')
+  COL_msg = i18next.t('about:COL.msg')
+
+
   constructor() { }
 
   ngOnInit(): void {

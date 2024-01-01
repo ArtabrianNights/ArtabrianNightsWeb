@@ -27,11 +27,8 @@ import { Torneo2Component } from './hemeroteca/2023/torneo2/torneo2.component';
 import { Torneo3Component } from './hemeroteca/2023/torneo3/torneo3.component';
 import { Torneo4Component } from './hemeroteca/2023/torneo4/torneo4.component';
 import { Torneo5Component } from './hemeroteca/2023/torneo5/torneo5.component';
+import { Torneo6Component } from './hemeroteca/2023/torneo6/torneo6.component';
 import { CalendarComponent } from './calendar/calendar.component';
-
-
-// Import Flex Layout module
-//import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -48,6 +45,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     Torneo3Component,
     Torneo4Component,
     Torneo5Component,
+    Torneo6Component,
   ],
   imports: [
     AppRoutingModule,
@@ -62,7 +60,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     MatTabsModule,
     MatIconModule,
     MatMenuModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

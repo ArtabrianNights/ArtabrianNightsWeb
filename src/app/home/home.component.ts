@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import i18next from '../../i18n';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  
+  greeting = i18next.t('home:Greeting');
+  archive = i18next.t('toolbar:Archive').toLowerCase();
+  
 
 }
+

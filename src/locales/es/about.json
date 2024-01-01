@@ -1,0 +1,36 @@
+{
+    "AN":
+    {
+        "msg1":{
+            "1": "es una asociación sin ánimo de lucro que nace con el objetivo de organizar torneos de",
+            "2": "en"
+        },
+        
+        "msg2":
+        {
+            "1": "Esta región se encuentra en el",
+            "2": "Golfo Ártabro",
+            "3": "que da nombre a la asociación, junto con una de las primeras ediciones del juego, Arabian Nights."
+        }
+    },
+    "OBX":
+    {
+        "title": "Objetivos",
+        "G1": "Dar a conocer diversos formatos del juego de cartas",
+        "G2": "Organizar eventos y torneos, fomentando la participación para reforzar la comunidad actual y crear nuevas relaciones sociales entre participantes.",
+        "G3": "Crear un entorno que favorezca el juego distendido y amistoso, incluso en torneos con nivel de reglas competitivo.",
+        "G4": "Ofrecer a los participantes un lugar donde practicar y competir por premios atractivos, sin detrimento de la diversión y del espíritu deportivo.",
+        "G5": "Minimizar el impacto de la desigualdad social y económica en la capacidad para adquirir y jugar una baraja competitiva, incidiendo en que sean las facultades intelectuales de cada individuo y no las económicas las que definan los resultados.",
+        "G6": "Promover y dar a conocer otros juegos."          
+    },
+    "THX":
+    {
+        "title": "Agradecimientos",
+        "msg": "Nos gustaría dar las gracias a todas las entidades, asociaciones y tiendas que han apoyado este proyecto y continúan haciéndolo, ya que sin ellas lo que hoy es una realidad continuaría siendo tan solo una idea."
+    },
+    "COL":
+    {
+        "title": "Colaboradores",        
+        "msg": "Las actividades organizadas por Artabrian Nights no serían posibles sin la inestimable colaboración de:"
+    }
+}
