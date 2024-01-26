@@ -7,17 +7,20 @@ import esHome from './locales/es/home.json';
 import esToolbar from './locales/es/toolbar.json';
 import esAbout from './locales/es/about.json';
 import esCalendar from './locales/es/calendar.json'
+import esArchive from './locales/es/archive.json'
 import esFallback from './locales/es/fallback.json';
 
 import enHome from './locales/en/home.json';
 import enAbout from './locales/en/about.json';
 import enToolbar from './locales/en/toolbar.json';
 import enCalendar from './locales/en/calendar.json'
+import enArchive from './locales/en/archive.json'
 
 import glHome from './locales/gl/home.json';
 import glToolbar from './locales/gl/toolbar.json';
 import glAbout from './locales/gl/about.json';
 import glCalendar from './locales/gl/calendar.json'
+import glArchive from './locales/gl/archive.json'
 
 
 export const defaultNS = 'home';
@@ -37,7 +40,7 @@ i18next
   //lng: 'es',
   //lng: i18next.options.lng,
   debug: true,
-  ns: ['home', 'toolbar', 'about'],
+  ns: ['home', 'toolbar', 'about', 'archive'],
   //fallbackLng: ['es', 'en'],
   fallbackLng: 'es',
   defaultNS,
@@ -52,19 +55,22 @@ i18next
       home: esHome,
       toolbar: esToolbar,
       about: esAbout,
-      calendar: esCalendar,      
+      calendar: esCalendar,
+      archive: esArchive,
     },
     en:{
       home: enHome,
       toolbar: enToolbar,
       about: enAbout,
-      calendar: enCalendar
+      calendar: enCalendar,
+      archive: enArchive,
     },
     gl:{
       home: glHome,
       toolbar: glToolbar,
       about: glAbout,
-      calendar: glCalendar
+      calendar: glCalendar,
+      archive: glArchive,
     }
   },
   backend: {

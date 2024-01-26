@@ -1,6 +1,49 @@
 <!-- TAB GROUP BY YEAR -->
 <mat-tab-group class="xl:w-3/5 lg:w-2/3 mx-auto">
 
+  <!-- 2024 -->
+  <mat-tab label="2024">
+    <ng-template matTabContent>
+      <mat-tab-group class="mx-auto">
+
+        <!-- Modern -->
+        <mat-tab label="Modern">
+          <ng-template matTabContent>
+            <p class="px-5 py-5 bg-white rounded-lg flex items-top justify-start space-x-6 underline">
+              <a href="assets/doc/Artabrian Nights - Bases Liga Modern 2024.pdf"  target="_blank" rel="www.artabriannights.com">{{limo_msg}}</a>
+            </p>
+            <mat-tab-group class="mx-auto">
+              <!-- Liga 1 -->
+              <mat-tab label="Liga #1">
+                <ng-template matTabContent>                  
+                  <app-limo1></app-limo1>
+                </ng-template>
+              </mat-tab>
+            </mat-tab-group>
+          </ng-template>
+        </mat-tab>
+
+        <!-- cEDH -->
+        <mat-tab label="c E D H">
+          <ng-template matTabContent>
+            <p class="px-5 py-5 bg-white rounded-lg flex items-top justify-start space-x-6 underline">
+              <a href="assets/doc/Artabrian Nights - cEDH Guidelines.pdf"  target="_blank" rel="www.artabriannights.com">{{cEDH_msg}}</a>
+            </p>
+            <mat-tab-group class="mx-auto">
+              <!-- II Aniversario cEDH Galicia -->
+              <mat-tab label="II Aniversario cEDH Galicia">
+                <ng-template matTabContent>
+                  <app-cedhgal2></app-cedhgal2>
+                </ng-template>
+              </mat-tab>
+            </mat-tab-group>
+          </ng-template>
+        </mat-tab>
+
+      </mat-tab-group>
+    </ng-template>
+  </mat-tab>
+
   <!-- 2023 -->
   <mat-tab label="2023">
     <ng-template matTabContent>
@@ -36,13 +79,6 @@
           </ng-template>
         </mat-tab>
       </mat-tab-group>
-    </ng-template>
-  </mat-tab>
-
-  <!-- 2024 -->
-  <mat-tab label="2024">
-    <ng-template matTabContent>
-      Próximamente
     </ng-template>
   </mat-tab>
 

@@ -13,6 +13,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 // Import my modules
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +30,8 @@ import { Torneo4Component } from './hemeroteca/2023/torneo4/torneo4.component';
 import { Torneo5Component } from './hemeroteca/2023/torneo5/torneo5.component';
 import { Torneo6Component } from './hemeroteca/2023/torneo6/torneo6.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { Limo1Component } from './hemeroteca/2024/limo1/limo1.component';
+import { Cedhgal2Component } from './hemeroteca/2024/cedhgal2/cedhgal2.component';
 
 
 @NgModule({
@@ -46,6 +49,8 @@ import { CalendarComponent } from './calendar/calendar.component';
     Torneo4Component,
     Torneo5Component,
     Torneo6Component,
+    Limo1Component,
+    Cedhgal2Component,
   ],
   imports: [
     AppRoutingModule,
@@ -61,6 +66,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     MatIconModule,
     MatMenuModule,
     MatDividerModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
