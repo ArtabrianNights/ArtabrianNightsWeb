@@ -95,7 +95,7 @@ i18next
 MIT
 The MIT License (MIT)
 
-Copyright (c) 2023 i18next
+Copyright (c) 2024 i18next
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -144,7 +144,7 @@ SOFTWARE.
 
 i18next-http-backend
 MIT
-Copyright (c) 2023 i18next
+Copyright (c) 2024 i18next
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
