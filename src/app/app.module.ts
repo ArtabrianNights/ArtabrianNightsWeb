@@ -32,6 +32,8 @@ import { Torneo6Component } from './hemeroteca/2023/torneo6/torneo6.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { Limo1Component } from './hemeroteca/2024/limo1/limo1.component';
 import { Cedhgal2Component } from './hemeroteca/2024/cedhgal2/cedhgal2.component';
+import { Limo2Component } from './hemeroteca/2024/limo2/limo2.component';
+import { Limo3Component } from './hemeroteca/2024/limo3/limo3.component';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { Cedhgal2Component } from './hemeroteca/2024/cedhgal2/cedhgal2.component
     Torneo6Component,
     Limo1Component,
     Cedhgal2Component,
+    Limo2Component,
+    Limo3Component,
   ],
   imports: [
     AppRoutingModule,

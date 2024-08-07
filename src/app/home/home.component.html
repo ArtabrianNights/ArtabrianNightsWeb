@@ -3,23 +3,36 @@
 
   <!-- COLORFUL GRADIENT FRAME - Working as a white frame, div absolute not working... -->
   <div class="group relative mx-auto">
-    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+    <!--div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div-->
       <div class="px-5 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
         <!-- SWIPER -->
         <swiper-slide>
           <mat-card>
-            <mat-card-header class="flex flex-col items-center">
-              <mat-card-title class="dark:text-gray-700 text-center">{{upcoming}}</mat-card-title>
-              <mat-card-title class="dark:text-gray-700 text-center">II Aniversario cEDH Galicia - 27/04/2024</mat-card-title>
-              <mat-card-title class="dark:text-gray-700 text-center"><a class="underline text-blue-600" href="https://forms.gle/BPJfCvZfquXm2tai9" target="_blank" rel="www.artabriannights.com">{{registration}}</a></mat-card-title>
-              <mat-card-title class="text-center">
+            <mat-card-header class="flex flex-col items-center sm:text-xl text-base">
+              <!--mat-card-title class="dark:text-gray-700 text-center">{{upcoming}}</mat-card-title-->
+              <mat-card-title class="dark:text-gray-700 text-center sm:text-xl text-base underline">Artabrian Weekend 2024</mat-card-title>
+              <mat-card-content class="dark:text-gray-700 text-center">{{date}}<br>{{registration}}</mat-card-content>
+              <div class="sm:p-6 p-2 grid sm:grid-cols-3 grid-cols-2 sm:gap-4 gap-1 content-start">
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/2kjvSzAhcgWNTWA26" target="_blank" rel="www.artabriannights.com">Team Trios</a></button>
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/ESRHwmfFqRCaCAGHA" target="_blank" rel="www.artabriannights.com">Legacy</a></button>
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/j9Js8tsC9GVwFPHf8" target="_blank" rel="www.artabriannights.com">Pioneer</a></button>
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/Wx7jXtUwZUkkj1Mm9" target="_blank" rel="www.artabriannights.com">Modern</a></button>
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/QRm86UyGyMDpBcKp9" target="_blank" rel="www.artabriannights.com">Pauper</a></button>
+                <button class="p-5 rounded-lg bg-blue-200 hover:bg-gray-900 hover:text-yellow-400"><a href="https://forms.gle/HckcfUR5XK4EE57T8" target="_blank" rel="www.artabriannights.com">Premodern</a></button>
+              </div>
+              <!--mat-card-title class="text-center"-->
                 <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLScbjRzcvWBmUY03S_YR-9nE1GNwfa2XXtn_Za3St4QbJqMgkA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Formulario de preinscripción</a>-->
                 <!--<h1>{{greeting}}
                 <a class="text-blue-700 underline" href="https://artabriannights.github.io/ArtabrianNightsWeb/archive">{{archive}}</a></h1>-->
-              </mat-card-title>
+              <!--/mat-card-title-->
             </mat-card-header>
-            <img src="assets/images/NextTournament/Cartel.jpeg" alt="CartelProximoEvento"> 
+            <div class="grid object-center">
+            <div class="flex justify-center items-center">
+              <iframe class="sm:hidden block" src="https://drive.google.com/file/d/1LprmHce6C0fjoIuwySYBbfUhRSj40NFw/preview" width="310" height="520" allow="autoplay"></iframe>
+              <iframe class="sm:block hidden" src="https://drive.google.com/file/d/1LprmHce6C0fjoIuwySYBbfUhRSj40NFw/preview" width="600" height="1080" allow="autoplay"></iframe>
+            </div>
+            </div>
           </mat-card>
         </swiper-slide>
 

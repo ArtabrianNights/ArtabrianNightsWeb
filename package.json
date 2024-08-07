@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "toc": "i18next-resources-for-ts toc -i ./locales/es -o ./@types/resources.ts"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,12 @@
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.10",
     "angular-cli-ghpages": "^1.0.7",
+    "flag-icons": "^7.1.0",
+    "i18next": "^23.7.13",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.2",
+    "jquery-localize": "^0.1.0",
+    "react-i18next": "^14.0.0",
     "rxjs": "~7.8.1",
     "swiper": "^10.3.1",
     "tslib": "^2.6.2",

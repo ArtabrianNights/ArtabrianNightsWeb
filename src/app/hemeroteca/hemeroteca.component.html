@@ -13,12 +13,28 @@
               <a href="assets/doc/Artabrian Nights - Bases Liga Modern 2024.pdf"  target="_blank" rel="www.artabriannights.com">{{limo_msg}}</a>
             </p>
             <mat-tab-group class="mx-auto">
+
+              <!-- Liga 3 -->
+              <mat-tab label="Liga #3">
+                <ng-template matTabContent>                  
+                  <app-limo3></app-limo3>
+                </ng-template>
+              </mat-tab>
+
+              <!-- Liga 2 -->
+              <mat-tab label="Liga #2">
+                <ng-template matTabContent>                  
+                  <app-limo2></app-limo2>
+                </ng-template>
+              </mat-tab>
+
               <!-- Liga 1 -->
               <mat-tab label="Liga #1">
                 <ng-template matTabContent>                  
                   <app-limo1></app-limo1>
                 </ng-template>
               </mat-tab>
+
             </mat-tab-group>
           </ng-template>
         </mat-tab>

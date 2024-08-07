@@ -23,20 +23,21 @@ export class AppComponent implements OnInit{
             'dgm', 'ths', 'bng', 'jou', 'ktk', 'frf', 'dtk', 'bfz', 'ogw', 'soi',
             'emn', 'kld', 'aer', 'akh', 'hou', 'xln', 'rix', 'dom', 'grn', 'rna',
             'war', 'eld', 'thb', 'iko', 'znr', 'khm', 'stx', 'mid', 'vow', 'neo',
-            'snc', 'dmu', 'bro', 'one', 'mom', 'mat', 'woe', 'lci',
+            'snc', 'dmu', 'bro', 'one', 'mom', 'mat', 'woe', 'lci', 'mkm', 'otj',
+            'big', 'blb',
             // Command Zone Sets
             'van', 'hop', 'arc', 'cmd', 'pc2', 'cm1', 'c13', 'cns', 'c14', 'c15',
             'cn2', 'c16', 'pca', 'cma', 'e01', 'e02', 'c17', 'cm2', 'bbd', 'c18',
             'c19', 'c20', 'znc', 'cc1', 'cmr', 'cmc', 'khc', 'c21', 'afc', 'mic',
             'voc', 'cc2', 'nec', 'ncc', 'clb', 'dmc', '40k', 'brc', 'onc', 'moc',
-            'scd', 'cmm', 'ltc', 'woc', 'lcc', 
+            'scd', 'cmm', 'ltc', 'woc', 'lcc', 'mkc', 'otc', 'blc', 'm3c',
             // Reprint Sets
             'chr', 'ath', 'brb', 'btd', 'dkm', 'mma', 'mm2', 'ema', 'mm3', 'xren',
             'xrin', 'ima', 'a25', 'uma', 'mh1', '2xm', 'jmp', 'mb1', 'mh2', 'sta',
-            'j21', '2x2', 'brr', 'j22', 'mul', 'wot', 'br', 'spg',
+            'j21', '2x2', 'brr', 'j22', 'mul', 'wot', 'br', 'spg', 'otp',
             // Beginner Sets
             'por', 'p02', 'ptk', 's99', 's00', 'w16', 'w17', 
-            //Duel Decks
+            // Duel Decks
             'evg', 'dd2', 'ddc', 'ddd', 'dde', 'ddf', 'ddg', 'ddh', 'ddi', 'ddj',
             'ddk', 'ddl', 'ddm', 'ddn', 'ddo', 'ddp', 'ddq', 'ddr', 'dds', 'ddt',
             'ddu', 
@@ -49,7 +50,7 @@ export class AppComponent implements OnInit{
             // Global Series
             'gs1',
             // Other Supplemental Products
-            'tsr', 'dmr', 'ltr', 'who', 'rvr', 'pip',
+            'tsr', 'dmr', 'ltr', 'who', 'rvr', 'pip', 'clu', 'acr', 'mh3',
             // Promotional Sets
             'pguru', 'pmtg1', 'pleaf', 'pmei', 'parl', 'exp', 'psalvat05', 'psalvat11',
             'mp1', 'mp2', 'med', 'j20', 'zne', 'bot', 'rex',
