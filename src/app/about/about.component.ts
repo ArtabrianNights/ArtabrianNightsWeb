@@ -61,6 +61,9 @@ URLSet = [  'https://www.mtgpics.com/pics/art/ara/016_1.jpg', // City of Brass
   COL_title = i18next.t('about:COL.title')
   COL_msg = i18next.t('about:COL.msg')
 
+  orgs = i18next.t('about:COL.orgs')
+  lgs = i18next.t('about:COL.lgs')
+
 
   constructor() { }
 

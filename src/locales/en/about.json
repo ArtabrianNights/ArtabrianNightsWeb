@@ -30,7 +30,9 @@
     },
     "COL":
     {
-        "title": "Contributors",        
-        "msg": "The activities organised by Artabrian Nights would not be possible without the invaluable support of:"
+        "title": "Partners",        
+        "msg": "The activities organised by Artabrian Nights would not be possible without the invaluable support of:",
+        "orgs": "Tournament Organisers",
+        "lgs": "Game Stores"
     }
 }

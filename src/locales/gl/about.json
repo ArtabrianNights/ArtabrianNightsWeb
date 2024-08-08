@@ -31,6 +31,8 @@
     "COL":
     {
         "title": "Colaboradores",        
-        "msg": "Artabrian Nights non podería organizar as súas actividades sen a inestimable colaboración de:"
+        "msg": "Artabrian Nights non podería organizar as súas actividades sen a inestimable colaboración de:",
+        "orgs": "Organizadores",
+        "lgs": "Tendas especializadas"
     }
 }

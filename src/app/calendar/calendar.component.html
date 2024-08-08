@@ -1,38 +1,51 @@
-<div class="flex flex-row justify-center relative min-h-screen mx-auto">
+<div class="flex flex-row justify-center relative mx-auto text-center content-center">
 
-  <div class="text-center content-center mx-12 my-12">
+  <div class="mx-12 my-10">
 
-    <p class="font-bold text-lg">{{title}}</p>
+    <p class="font-bold lg:text-2xl text-lg">{{title}}</p>
     <br>
     <p class="sm:text-center md:text-justify mx-auto">{{msg}}</p>
     <br>
-    <br>
 
-    
-    <!-- Responsive iFrame Container desktop -->
-    <div class="hidden xl:block">
-      
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
-    </div>
+    <!-- Center the iFrame -->
+    <div class="grid object-center">
+      <div class="flex justify-center items-center">
 
-    <!-- Responsive iFrame Container desktop -->
-    <div class="hidden lg:max-xl:block">
-      
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="800" height="800" frameborder="0" scrolling="no"></iframe>
-    </div>
+        <!-- Responsive iFrame Container desktop -->
+        <div class="hidden xl:block">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5"
+            style="border:solid 1px #777" width="1000" height="800" frameborder="0" scrolling="no">
+          </iframe>
+        </div>
+        
+        <!-- Responsive iFrame Container desktop -->
+        <div class="hidden lg:block xl:hidden">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5"
+            style="border:solid 1px #777" width="800" height="800" frameborder="0" scrolling="no">
+          </iframe>
+        </div>
 
-    <!-- Responsive iFrame Container desktop -->
-    <div class="hidden md:max-lg:block">
-      
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
+        <!-- Responsive iFrame Container desktop -->
+        <div class="hidden md:block lg:hidden">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=1&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5"
+            style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="yes">
+          </iframe>
+        </div>
 
-    <!-- Responsive iFrame Container smaller screens -->
-    <div class="sm:max-w-screen-sm md:hidden">
-      
-      <iframe src="https://calendar.google.com/calendar/embed?height=620&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=0&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="400" height="800" frameborder="0" scrolling="yes"></iframe>
+        <!-- Responsive iFrame Container - Smartphones -->
+        <div class="block md:hidden">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=620&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showPrint=0&showDate=1&showTz=0&showCalendars=0&showTabs=0&mode=MONTH&showTitle=0&showNav=1&src=YXJ0YWJyaWFubmlnaHRzQGdtYWlsLmNvbQ&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5"
+            style="border:solid 1px #777" width="360" height="540" frameborder="0" scrolling="yes">
+          </iframe>
+        </div>
+
+      </div>
     </div>
 
   </div>
-  
+
 </div>
